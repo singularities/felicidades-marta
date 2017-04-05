@@ -11,3 +11,10 @@ App.icons({
   'android_xxhdpi': 'icons/icon-144.png', // (144x144)
   'android_xxxhdpi': 'icons/icon-192.png' // (192x192)
 });
+
+App.launchScreens({
+//  'android_ldpi_portrait': 'splash/android-ldpi.png', // 200x320
+//  'android_mdpi_portrait': 'splash/android-mdpi.png', // 320x480
+  'android_hdpi_portrait': 'splash/android-hdpi.png', // 480x800
+  'android_xhdpi_portrait': 'splash/android-xhdpi.png' //  720x1280
+});
