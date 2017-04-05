@@ -2,7 +2,10 @@
   "name": "felicidades-marta",
   "private": true,
   "scripts": {
-    "start": "meteor run"
+    "start": "meteor run",
+    "meteor:build": "meteor build --directory dist/ --server-only",
+    "dist": "npm run meteor:build",
+    "optimize:images": "optipng public/images/*"
   },
   "dependencies": {
     "@angular/animations": "^4.0.1",
