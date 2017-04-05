@@ -6,7 +6,7 @@
     "meteor:build": "meteor build --directory dist/ --server-only",
     "dist": "npm run meteor:build",
     "build:android": "imports/scripts/build-android-app",
-    "optimize:images": "optipng public/images/*"
+    "optimize:images": "optipng icons/*"
   },
   "dependencies": {
     "@angular/animations": "^4.0.1",
