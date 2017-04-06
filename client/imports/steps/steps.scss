@@ -1,6 +1,9 @@
 steps {
   display: block;
-  margin: 24px;
+
+   .step {
+     margin: 0px 24px;
+   }
 
   .header {
     min-height: 72px;
@@ -42,5 +45,4 @@ steps {
       background-color: mat-color($primary);
     }
   }
-
 }

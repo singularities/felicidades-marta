@@ -8,4 +8,11 @@ import template from "./app.html";
   selector: 'felicidades-marta',
   template
 })
-export class FelicidadesMarta {}
+
+export class FelicidadesMarta {
+  public info = false;
+
+  showInfo () {
+    this.info = true;
+  }
+}
