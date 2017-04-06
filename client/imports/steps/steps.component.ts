@@ -14,18 +14,18 @@ export class Steps {
     {
       "type": "test",
       "title": "Juego de acertijos",
-      'done': true,
       'order': 1
     },
     {
-      "type": "gift",
-      'done': false
+      "type": "gift"
     },
+    /*
     {
       'type': 'test',
       'title': 'Plegar la bicicleta',
       'order': 2
     }
+    */
   ];
 
   iconType (step) {
