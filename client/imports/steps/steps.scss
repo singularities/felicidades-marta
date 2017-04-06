@@ -1,0 +1,41 @@
+steps {
+  display: block;
+  margin: 24px;
+
+  .header {
+    min-height: 72px;
+
+    .icon {
+      width: 32px;
+      float: left;
+      margin-top: 24px;
+
+      .material-icons {
+      }
+    }
+
+    .title {
+      margin-left: 40px;
+      font-size: 18px;
+      font-weight: bold;
+      padding-top: 25px;
+    }
+  }
+
+  .content {
+    min-height: 40px;
+    margin-left: 12px;
+    border-left: solid 1px #8A8A8A;
+  }
+
+  .circle {
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    border-radius: 99%;
+    text-align: center;
+    color: white;
+    background-color: #8A8A8A;
+  }
+
+}

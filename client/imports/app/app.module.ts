@@ -7,6 +7,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { FelicidadesMarta } from './app.component';
 import { Intro } from '../intro/intro.component';
+import { Steps } from '../steps/steps.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { Intro } from '../intro/intro.component';
   ],
   declarations: [
     FelicidadesMarta,
-    Intro
+    Intro,
+    Steps
   ],
   entryComponents: [
     FelicidadesMarta

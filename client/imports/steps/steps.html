@@ -1,0 +1,30 @@
+<div class="step" *ngFor="let step of steps">
+  <div class="header">
+    <div class="icon">
+      <div class="circle" [ngClass]="{'active': step.done }">
+        <md-icon *ngIf="iconType(step)">{{ iconType(step) }}</md-icon>
+        <span *ngIf="! iconType(step)">{{ step.order }}</span>
+      </div>
+    </div>
+    <div class="title">
+      {{ title(step) }}
+    </div>
+  </div>
+
+  <div class="content">
+
+  </div>
+
+</div>
+
+<div class="step">
+  <div class="header">
+    <div class="icon">
+      <div class="circle">
+        ?
+      </div>
+
+    </div>
+
+  </div>
+</div>
