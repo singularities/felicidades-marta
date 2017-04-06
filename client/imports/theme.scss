@@ -90,3 +90,5 @@ $theme: mat-light-theme($palette-primary, $palette-accent, $palette-warn);
 $primary: map-get($theme, primary);
 $accent: map-get($theme, accent);
 $divider: #BDBDBD;
+
+@include angular-material-theme($theme);
