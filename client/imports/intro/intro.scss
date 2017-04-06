@@ -2,7 +2,23 @@ intro {
   display: block;
   height: 100%;
 
-  md-card {
+  .carousel {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .slides {
+    position: relative;
+    overflow: hidden;
+    transition: left 1s ease;
+  }
+
+  .slide {
+    position: relative;
+    float: left;
+  }
+
+  .actions {
     margin: 16px;
   }
 }

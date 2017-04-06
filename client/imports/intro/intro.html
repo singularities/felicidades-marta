@@ -1,7 +1,30 @@
 <div fxLayout="column" fxFill>
-  <md-card fxFlex>Simple card</md-card>
-  <div>
-    hola
+  <div fxFlex>
+    <div class="carousel">
+      <div class="slides"
+           [style.left]="'-' + currentSlide * 100 + '%'"
+           [style.width]=" slides.length + '00%'">
+        <div class="slide"
+             [style.width]="100 / slides.length + '%'"
+             *ngFor="let slide of slides">
+          {{ slide.text }}
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="actions" fxLayout="row">
+    <button md-raised-button
+            *ngIf="currentSlide > 0"
+            (click)="currentSlide = currentSlide - 1">Atrás</button>
+    <div class="spacer"></div>
+    <button md-raised-button
+            color="primary"
+            *ngIf="currentSlide < slides.length - 1"
+            (click)="currentSlide = currentSlide + 1">Siguiente</button>
+    <button md-raised-button
+            color="primary"
+            *ngIf="currentSlide === slides.length - 1"
+            (click)="finish()">¡Empezar!</button>
   </div>
 </div>

@@ -10,9 +10,5 @@ import template from "./app.html";
 })
 
 export class FelicidadesMarta {
-  public info = false;
-
-  showInfo () {
-    this.info = true;
-  }
+  public intro = true;
 }

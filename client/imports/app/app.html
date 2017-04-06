@@ -1,10 +1,11 @@
-<md-toolbar color="primary" *ngIf="!info">
+<md-toolbar color="primary" *ngIf="!intro">
   <span>¡Felicidades Marta!</span>
   <span class="spacer"></span>
-  <md-icon (click)="showInfo()">info</md-icon>
+  <md-icon (click)="intro = true">info</md-icon>
 </md-toolbar>
 
 
-<intro *ngIf="info"></intro>
+<intro *ngIf="intro"
+       (onFinished)="intro = false"></intro>
 
-<steps *ngIf="!info"></steps>
+<steps *ngIf="!intro"></steps>
