@@ -7,7 +7,20 @@
         <div class="slide"
              [style.width]="100 / slides.length + '%'"
              *ngFor="let slide of slides">
-          {{ slide.text }}
+          <div fxLayout="column" fxFill>
+            <div fxFlex="66"
+                 fxLayout
+                 fxLayoutAlign="center center"
+                 class="image-container">
+              <img [src]="'/images/' + slide.image" />
+            </div>
+            <div fxFlex="33"
+                 fxLayout
+                 fxLayoutAlign="center center"
+                 class="text-container">
+              <span>{{ slide.text }}</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
