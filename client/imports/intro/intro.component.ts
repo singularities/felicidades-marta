@@ -30,7 +30,7 @@ export class Intro {
       "image": "te-quiero.jpg"
     },
     {
-      "text": "Qué será... ¡Vamos a empezar a jugar!",
+      "text": "¿Qué será...? ¡Vamos a empezar a jugar!",
       "image": "interrogante.png"
     },
     {
