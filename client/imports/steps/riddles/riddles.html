@@ -6,11 +6,12 @@
 
   <md-input-container>
     <input mdInput
+           #answerInput
            placeholder="Respuesta"
            [(ngModel)]="answer"
            (keydown)="onKeydown()"
            name="answer">
-    <md-hint *ngIf="errorMessage" [ngStyle]="{'color': 'red'}" align="start">{{errorMessage}}</md-hint>
+    <md-hint *ngIf="errorMessage" [ngStyle]="{'color': 'red'}" align="end">{{errorMessage}}</md-hint>
   </md-input-container>
 
   <div class="answer-action" fxLayout="row">

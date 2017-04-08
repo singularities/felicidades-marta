@@ -1,5 +1,5 @@
 //Import Component form the angular core package
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 import template from './riddles.html';
 
@@ -10,6 +10,8 @@ import template from './riddles.html';
 })
 
 export class Riddles {
+  @ViewChild('answerInput') answerInput;
+
   riddles = [
     {
       'question': `
@@ -56,7 +58,9 @@ mi nombre escriba`,
       this.answer = '';
       this.current += 1;
     } else {
-      this.errorMessage = 'Eso no es';
+      this.errorMessage = 'No, eso no es';
+
+      this.answerInput.nativeElement.focus();
     }
 
 
