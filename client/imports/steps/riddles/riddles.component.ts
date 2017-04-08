@@ -23,7 +23,7 @@ mi nombre escriba`,
     },
     {
       'question': 'hola',
-      'anwser': 'bla'
+      'answer': 'bla'
     }
   ]
 
