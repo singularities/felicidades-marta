@@ -1,0 +1,22 @@
+<form class="flex-container"
+      fxLayout="column">
+  <div class="question">
+    {{ currentRiddle().question }}
+  </div>
+
+  <md-input-container>
+    <input mdInput
+           placeholder="Respuesta"
+           [(ngModel)]="answer"
+           (keydown)="onKeydown()"
+           name="answer">
+    <md-hint *ngIf="errorMessage" [ngStyle]="{'color': 'red'}" align="start">{{errorMessage}}</md-hint>
+  </md-input-container>
+
+  <div class="answer-action" fxLayout="row">
+    <div class="spacer"></div>
+    <button md-raised-button
+            color="accent"
+            (click)="validateAnswer()">Responder</button>
+  </div>
+</form>

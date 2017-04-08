@@ -14,7 +14,10 @@ export class Steps {
     {
       "type": "test",
       "title": "Juego de acertijos",
-      'order': 1
+      'order': 1,
+      'content': {
+        type: 'riddles'
+      }
     },
     {
       "type": "gift"

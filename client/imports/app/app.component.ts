@@ -10,5 +10,5 @@ import template from "./app.html";
 })
 
 export class FelicidadesMarta {
-  public intro = true;
+  public intro = false;
 }
