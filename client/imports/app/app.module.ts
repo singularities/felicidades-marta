@@ -3,6 +3,7 @@ import 'hammerjs';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -13,8 +14,9 @@ import { Riddles } from '../steps/riddles/riddles.component';
 
 @NgModule({
   imports: [
-    BrowserModule,
     FormsModule,
+    BrowserModule,
+    BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule
   ],

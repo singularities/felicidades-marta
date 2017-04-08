@@ -1,5 +1,6 @@
 //Import Component form the angular core package
 import { Component, ViewChild } from '@angular/core';
+import { MdSnackBar } from '@angular/material';
 
 import template from './riddles.html';
 
@@ -11,6 +12,8 @@ import template from './riddles.html';
 
 export class Riddles {
   @ViewChild('answerInput') answerInput;
+
+  constructor(public snackBar: MdSnackBar) {}
 
   riddles = [
     {
@@ -33,6 +36,7 @@ mi nombre escriba`,
 
   errorMessage;
 
+
   currentRiddle () {
     return this.riddles[this.current];
   }
@@ -54,6 +58,7 @@ mi nombre escriba`,
         this.currentRiddle().answer) {
 
       // show dialog
+      this.snackBar.open('¡Correcto!', null, { duration: 2000 });
 
       this.answer = '';
       this.current += 1;
