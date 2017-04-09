@@ -17,17 +17,36 @@ export class Riddles {
 
   riddles = [
     {
-      'question': `
-Redondo, redondo,
-fila por fila;
-quien sepa leer
-mi nombre escriba`,
+      'question': '¿Cuál es el único animal que muere entre aplausos?',
+      'answer': 'mosquito'
+    },
+    {
+      'question': `Tiene escamas y no es pez,
+ Tiene corona y no es rey
+ ¿Qué es?`,
+      'answer': 'piña'
+    },
+    {
+      'question': `Redondo, redondo,
+ fila por fila;
+ quien sepa leer
+ mi nombre escriba`,
       'answer': 'criba'
     },
     {
-      'question': 'hola',
-      'answer': 'bla'
-    }
+      'question': `Tiene cabeza, pero no tiene pies,
+ Tiene dientes, pero boca no es
+ ¿Qué es?`,
+      'answer': 'ajo'
+    },
+    {
+      'question': '¿Qué tienen las mujeres en medio de las piernas?',
+      'answer': 'rodillas'
+    },
+    {
+      'question': '¿Cuáles son las vacas más divertidas?',
+      'answer': 'vacaciones'
+    },
   ]
 
   current = 0;

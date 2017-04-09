@@ -1,5 +1,6 @@
 <form class="flex-container"
-      fxLayout="column">
+      fxLayout="column"
+      *ngIf="current < riddles.length">
   <div class="question">
     {{ currentRiddle().question }}
   </div>
@@ -15,9 +16,16 @@
   </md-input-container>
 
   <div class="answer-action" fxLayout="row">
+    <div class="counter">
+      {{ current + 1 }} / {{ riddles.length }}
+    </div>
     <div class="spacer"></div>
     <button md-raised-button
             color="accent"
             (click)="validateAnswer()">Responder</button>
   </div>
 </form>
+
+<div class="done" *ngIf="current >= riddles.length">
+  ¡Ole qué crack! Tu regalo te espera en casa
+</div>
