@@ -21,6 +21,35 @@ export class Steps {
       'done': true
     },
     {
+      "type": "gift",
+      'done': true
+    },
+    {
+      "type": "test",
+      "title": "Plegar la bicicleta",
+      'order': 2,
+      'content': {
+        type: 'empty'
+      },
+    },
+    {
+      "type": "test",
+      "title": "Subir la bici por las escaleras",
+      'order': 3,
+      'content': {
+        type: 'empty'
+      },
+    },
+
+    {
+      "type": "test",
+      "title": "Test bicicletero",
+      'order': 4,
+      'content': {
+        type: 'empty'
+      },
+    },
+    {
       "type": "gift"
     },
     /*
