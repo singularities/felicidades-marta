@@ -47,9 +47,59 @@ export class Riddles {
       'question': '¿Cuáles son las vacas más divertidas?',
       'answer': 'vacaciones'
     },
+    {
+      'question': '¿Qué puede ser sordo y agudo a la vez?',
+      'answer': 'dolor'
+    },
+    {
+      'question': `A veces soy del haba,
+ otras de bote,
+ pero suelo ser del culo,
+ y me pillo un rebote.
+ ¿Qué soy?`,
+      'answer': 'tonto'
+    },
+    {
+      'question': `Te la digo,
+ te la digo,
+ te la vuelvo a decir,
+ te la digo,
+ te la digo,
+ y no la sabes decir`,
+      'answer': 'tela'
+    },
+    {
+      'question': `¿Qué animal tiene 4 patas por el día,
+ 2 por la tarde
+ y 3 por la noche`,
+      'answer': 'humano'
+    },
+    {
+      'question': `Redondo soy
+ y de una sola cara
+ a la derecha algo valgo
+ a la izquierda nada`,
+      'answer': 'cero'
+    },
+    {
+      'question': `Blanca soy de nacimiento,
+ rodeada de verdes lazos,
+ llorando está por mi quien
+ me está haciendo pedazos`,
+      'answer': 'cebolla'
+    },
+    {
+      'question': '¿Quienes son los máximos sospechosos cuando se quema el zoo?',
+      'answer': 'llamas'
+    },
+    {
+      'question': 'Una señora muy enseñoreda, pasa por el agua y no se moja nada',
+      'answer': 'sombra'
+    }
+
   ]
 
-  current = 0;
+  current = 6;
 
   answer;
 

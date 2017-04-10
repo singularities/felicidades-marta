@@ -17,7 +17,8 @@ export class Steps {
       'order': 1,
       'content': {
         type: 'riddles'
-      }
+      },
+      'done': true
     },
     {
       "type": "gift"
