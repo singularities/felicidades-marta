@@ -16,7 +16,7 @@ export class Steps {
       "title": "Juego de acertijos",
       'order': 1,
       'content': {
-        type: 'riddles'
+        type: 'empty'
       },
       'done': true
     },

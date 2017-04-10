@@ -99,7 +99,7 @@ export class Riddles {
 
   ]
 
-  current = 6;
+  current = 0;
 
   answer;
 
