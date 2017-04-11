@@ -51,6 +51,16 @@ export class Quizzes {
       ],
       answer: 2
     },
+    {
+      question: '¿Qué es obligatorio llevar en bici por la noche?',
+      options: [
+        'Luces y chaleco reflectante',
+        'Luces y catadióptrico trasero',
+        'Chaleco trasero y catadióptrico reflectante',
+        'Luces, catadióptrico trasero y chaleco reflectante'
+      ],
+      answer: 1
+    },
   ];
 
   validateAnswers () {
