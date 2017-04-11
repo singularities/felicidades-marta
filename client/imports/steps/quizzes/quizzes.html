@@ -1,0 +1,40 @@
+
+<form class="flex-container"
+      fxLayout="column"
+      name="quizz">
+  <div *ngFor="let quizz of quizzes; let quizzIndex = index" class="quizz">
+    <div class="question">
+      {{ quizz.question }}
+    </div>
+
+    <md-radio-group class="flex-container"
+                    fxLayout="column"
+                    [name]="'answer-' + quizzIndex"
+                    [(ngModel)]="answers[quizzIndex]">
+
+      <md-radio-button *ngFor="let option of quizz.options; let i = index"
+                       [value]="i">
+        {{ option }}
+      </md-radio-button>
+    </md-radio-group>
+
+  </div>
+
+  <div class="answer-action" fxLayout="row">
+    <div *ngIf="correct">
+
+      <div *ngIf="correct < quizzes.length; else success">
+        Hay solo {{ correct }} respuestas correctas
+      </div>
+
+      <ng-template #success>
+        ¡Felicidades! Has pasado el test bicicletero
+      </ng-template>
+
+    </div>
+    <div class="spacer"></div>
+    <button md-raised-button
+            color="accent"
+            (click)="validateAnswers()">Responder</button>
+  </div>
+</form>

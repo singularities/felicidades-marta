@@ -46,7 +46,7 @@ export class Steps {
       "title": "Test bicicletero",
       'order': 4,
       'content': {
-        type: 'empty'
+        type: 'quizzes'
       },
     },
     {

@@ -11,6 +11,7 @@ import { FelicidadesMarta } from './app.component';
 import { Intro } from '../intro/intro.component';
 import { Steps } from '../steps/steps.component';
 import { Riddles } from '../steps/riddles/riddles.component';
+import { Quizzes } from '../steps/quizzes/quizzes.component';
 
 @NgModule({
   imports: [
@@ -24,7 +25,8 @@ import { Riddles } from '../steps/riddles/riddles.component';
     FelicidadesMarta,
     Intro,
     Steps,
-    Riddles
+    Riddles,
+    Quizzes
   ],
   entryComponents: [
     FelicidadesMarta

@@ -1,0 +1,15 @@
+quizzes {
+  .quizz {
+    margin-bottom: 32px;
+
+    .question {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    md-radio-button {
+      margin-top: 8px;
+    }
+  }
+
+}
