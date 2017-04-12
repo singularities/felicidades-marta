@@ -31,7 +31,24 @@ export class Steps {
       'content': {
         type: 'empty'
       },
+      'done': true
     },
+
+    {
+      "type": "test",
+      "title": "Test bicicletero",
+      'order': 4,
+      'content': {
+        type: 'empty'
+      },
+      'done': true
+    },
+    {
+      "type": "gift",
+      'done': true
+    },
+    /*
+
     {
       "type": "test",
       "title": "Subir la bici por las escaleras",
@@ -40,24 +57,6 @@ export class Steps {
         type: 'empty'
       },
     },
-
-    {
-      "type": "test",
-      "title": "Test bicicletero",
-      'order': 4,
-      'content': {
-        type: 'quizzes'
-      },
-    },
-    {
-      "type": "gift"
-    },
-    /*
-    {
-      'type': 'test',
-      'title': 'Plegar la bicicleta',
-      'order': 2
-    }
     */
   ];
 
