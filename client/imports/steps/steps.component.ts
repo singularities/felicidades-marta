@@ -37,7 +37,7 @@ export class Steps {
     {
       "type": "test",
       "title": "Test bicicletero",
-      'order': 4,
+      'order': 3,
       'content': {
         type: 'empty'
       },
@@ -47,6 +47,19 @@ export class Steps {
       "type": "gift",
       'done': true
     },
+    {
+      "type": "test",
+      "title": "Prueba en bar",
+      'order': 4,
+      'content': {
+        type: 'empty'
+      }
+    },
+
+    {
+      "type": "gift"
+    },
+
     /*
 
     {
