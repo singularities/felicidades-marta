@@ -53,6 +53,20 @@ export class Steps {
       'order': 4,
       'content': {
         type: 'empty'
+      },
+      'done': true
+    },
+
+    {
+      "type": "gift",
+      'done': true
+    },
+    {
+      "type": "test",
+      "title": "Ir al curro en bici",
+      'order': 5,
+      'content': {
+        type: 'empty'
       }
     },
 
@@ -60,17 +74,6 @@ export class Steps {
       "type": "gift"
     },
 
-    /*
-
-    {
-      "type": "test",
-      "title": "Subir la bici por las escaleras",
-      'order': 3,
-      'content': {
-        type: 'empty'
-      },
-    },
-    */
   ];
 
   iconType (step) {
