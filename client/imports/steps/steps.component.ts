@@ -67,11 +67,13 @@ export class Steps {
       'order': 5,
       'content': {
         type: 'empty'
-      }
+      },
+      'done': true
     },
 
     {
-      "type": "gift"
+      "type": "gift",
+      'done': true
     },
 
   ];
