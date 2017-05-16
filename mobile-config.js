@@ -1,7 +1,7 @@
 App.info({
   id: 'org.singularities.felicidades-marta',
   name: 'Felicidades Marta',
-  version: "0.0.1"
+  version: "0.0.2"
 });
 
 App.icons({
@@ -18,3 +18,11 @@ App.launchScreens({
   'android_hdpi_portrait': 'splash/android-hdpi.png', // 480x800
   'android_xhdpi_portrait': 'splash/android-xhdpi.png' //  720x1280
 });
+
+App.accessRule('*youtube*', { type: 'navigation' });
+App.accessRule('*ytimg*', { type: 'navigation' });
+
+App.appendToConfig(`
+  <preference name="AllowInlineMediaPlayback" value="true" />
+  <preference name="MediaPlaybackRequiresUserAction" value="false" /> 
+`);

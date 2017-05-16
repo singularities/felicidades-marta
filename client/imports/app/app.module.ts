@@ -12,6 +12,7 @@ import { Intro } from '../intro/intro.component';
 import { Steps } from '../steps/steps.component';
 import { Riddles } from '../steps/riddles/riddles.component';
 import { Quizzes } from '../steps/quizzes/quizzes.component';
+import { Beatbox } from '../steps/beatbox/beatbox.component';
 
 @NgModule({
   imports: [
@@ -26,7 +27,8 @@ import { Quizzes } from '../steps/quizzes/quizzes.component';
     Intro,
     Steps,
     Riddles,
-    Quizzes
+    Quizzes,
+    Beatbox
   ],
   entryComponents: [
     FelicidadesMarta

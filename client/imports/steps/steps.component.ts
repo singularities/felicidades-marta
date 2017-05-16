@@ -76,6 +76,18 @@ export class Steps {
       'done': true
     },
 
+    {
+      "type": "test",
+      "title": "Beatbox",
+      'order': 6,
+      'content': {
+        type: 'beatbox'
+      }
+    },
+
+    {
+      "type": "gift"
+    },
   ];
 
   iconType (step) {
