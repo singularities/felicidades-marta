@@ -19,8 +19,8 @@ App.launchScreens({
   'android_xhdpi_portrait': 'splash/android-xhdpi.png' //  720x1280
 });
 
-App.accessRule('*youtube*', { type: 'navigation' });
-App.accessRule('*ytimg*', { type: 'navigation' });
+App.accessRule('*://*.youtube.com/*', { type: 'navigation' });
+App.accessRule('*://*.ytimg.com/*', { type: 'navigation' });
 
 App.appendToConfig(`
   <preference name="AllowInlineMediaPlayback" value="true" />
