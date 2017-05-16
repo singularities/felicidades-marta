@@ -1,7 +1,7 @@
 App.info({
   id: 'org.singularities.felicidades-marta',
   name: 'Felicidades Marta',
-  version: "0.0.2"
+  version: "0.0.3"
 });
 
 App.icons({
